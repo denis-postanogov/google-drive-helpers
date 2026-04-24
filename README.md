@@ -18,7 +18,8 @@ A small collection of Python scripts for working with Google Drive via API.
 Currently includes:
 
 * **`gd_list.py`** — recursively list files in a Google Drive folder
-* **`gd_transfer_ownership.py`** — replace files in a folder with copies owned by you (workaround for ownership transfer limitations)
+* **`gd_take_ownership.py`** — replace files in a Google Drive folder with copies owned by you (workaround for ownership transfer limitations)
+* **`gd_clean_mydrive_root.py`** - move files located in My Drive root folder to trash
 
 These scripts are designed to be simple, local, and require no backend or deployment.
 
@@ -57,6 +58,13 @@ credentials.json
 Place it in the project root.
 
 ---
+
+### Add Users
+
+1. Go to <https://console.cloud.google.com/apis/credentials/consent>
+2. Open **Audience** tab
+3. Click **Add users**
+4. Enter user email(s) to enable them running the script.
 
 ## First Run
 
